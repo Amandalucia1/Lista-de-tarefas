@@ -2,6 +2,7 @@ const ul = document.querySelector('.tarefas');
 const btn = document.querySelector('.btn');
 const search = document.querySelector('#search');
 
+//converte uma string JSON em um objeto JavaScript
 let tarefas = JSON.parse(localStorage.getItem('todoTxt')) ?? [];
 
 function salvarTodoList() {
