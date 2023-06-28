@@ -31,7 +31,7 @@ const criarHTML = (item, index) => {
     li.classList.add('concluida');
   }
 
-  // Adiciona um evento de clique ao elemento <li> usando li.addEventListener('click', ...) para que a função seja executada quando a tarefa for clicada.
+  // Adiciona um evento de clique ao elemento <li> usando aCheck.addEventListener('click', ...) para que a função seja executada quando a tarefa for clicada.
   aCheck.addEventListener('click', () => {
     item.concluida = !item.concluida;
    aCheck.classList.toggle('checked');
