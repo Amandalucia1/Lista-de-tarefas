@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+    margin: auto;
+    margin-top: 60px;
+}
+h1{
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+input{
+    border-bottom: 1.8px solid #ddd;
+    width: 100%;
+    margin-right: 40px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+input:focus{
+    border-color: rgb(41, 106, 204);
+}
+.div button{
+    padding: .4rem .9rem;
+    background-color: #025;
+    border-radius: 40px;
+    
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.div button:hover{
+    box-shadow: 1px 1px 5px #0f0f0bc2;
+    /* background-color: #1a5cc0; */
+    transform: translateY(-3px);
+}
+.div button:active{
+    transform: translateY(0px);
+}
+.container2{
+    margin-top: 60px;
+    width: 50%;
+}
+.container2 li{
+    text-align: left;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #025;
+    margin-bottom: 30px;
+    padding: 8px;
+    font-size: 1.4rem;
+    width: 90%;
+}
+.container2 a.trash{
+    padding: 4px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(./trash.svg) no-repeat center;
+    width: 28px;
+    height: 28px;
+}
+.container2 a.checkbox{
+    padding: 4px 12px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(./checkbox.svg) no-repeat center;
+    width: 28px;
+    height: 28px;
+}
+.container2 a:hover{
+    transform: translateY(-1px);
+}
+/*Atividade concluida*/
+li.concluida {
+    text-decoration: line-through;
+    color: blue;
+  }
+li div{
+    display: flex;
+}
+@media(max-width:640px){
+    .div{
+        display: block;
+        margin: auto;
+    }
+    .div button{
+        width: 20vw;
+        margin: 40px auto 0 auto;
+        display: block;
+    }
+}
+@media(max-width:600px){
+    h1{
+        font-size: 1.5;
+    }
+    li{
+       font-size: 1rem;
+    }
+
+}
